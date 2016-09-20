@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    tools:context="com.example.rm40300.propaganda.FragmentPropaganda">
+
+    <TextView
+        android:id="@+id/tvPropaganda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Faça já sua matrícula!"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnPropaganda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique Aqui"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button_selector"/>
+
+</LinearLayout>

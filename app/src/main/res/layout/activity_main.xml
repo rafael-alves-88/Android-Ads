@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogoFiap"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo_fiap" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MBA em Desenvolvimento de Aplicações e Games para Dispositivos Móveis - Internet das Coisas"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/holo_red_dark"/>
+
+                <TextView
+                    android:id="@+id/tvFiap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:textColor="@android:color/black"
+                    android:text="VOCÊ SERÁ PREPARADO PARA\n
+Entender o modelo de negócio e comercialização de aplicativos móveis.\n
+Construir aplicações para dispositivos móveis no ambiente iOS.\n
+Construir aplicações para dispositivos móveis no ambiente Android.\n
+Construir aplicações para dispositivos móveis no ambiente Windows.\n
+Construir aplicações em HTML5 para dispositivos móveis.\n
+Construir e projetar games para dispositivos móveis.\n
+Conhecer os fundamentos da tecnologia móvel usando Internet das Coisas.\n
+Utilizar as facilidades de computação em nuvem em aplicações móveis.\n
+Empreender no desenvolvimento de seu produto para o segmento de mobilidade." />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include layout="@layout/fragment_include_propaganda"/>
+
+</LinearLayout>
